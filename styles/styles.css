@@ -1,4 +1,60 @@
+body{
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
 .wrapper{
     width: 100%;
     background: linear-gradient(70deg,#CCFFFF ,#FFCCCC);
+}
+
+input[type="text"], 
+input[type="email"],
+input[type="number"],
+input[type="optionvalue"]{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    display:inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#role , #feature{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    display:inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+placeholder{
+    font-size: 16px;
+}
+.heading{
+    text-align: center;
+    padding: 10px;
+}
+.survey-form{
+    padding: 0px;
+    /* background-color: hotpink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    margin: auto;
+    padding: 40px;
+    background-color: hotpink;
+}
+
+.submit-btn{
+    width: 100%;
+    padding: 10px;
+    background-color: #55af50;
+    color:#CCFFFF;
+    cursor: pointer;
+    font-size: 18px;
 }
