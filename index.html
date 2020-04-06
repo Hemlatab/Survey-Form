@@ -1,18 +1,6 @@
 <!DOCTYPE html>
 <html>
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <script >
-
-        function checkAge() {
-          let validateAge = document.getElementById("age");
-          if (!checkAge.checkAgeValidity()) {
-            document.getElementById("age").innerHTML = validateAge.validateMessage;
-          } else {
-            document.getElementById("age").innerHTML = "Age requirement met";
-          }
-        }
-        
-        </script>
     <body>
         <div class="wrapper">
 
@@ -23,7 +11,7 @@
                 </div>
                     <div class="survey-form">
 
-                    <form>
+                    <form name="surveyForm" method="post" action="index.html" onsubmit="return validate()">
                         <label for="name">Name</label><br>
                         <input type="text" id="name" name="name"><br>
                         <label for="email">Email</label><br>
@@ -88,12 +76,13 @@
                         <p>Any comments or suggestions?</p>
                         <textarea rows="10" cols="110" placeholder="Enter your comment here"></textarea> <br>
                         <br>
-                        <button class="submit-btn">Submit</button>
+                        <button class="submit-btn" onclick="test()">Submit</button>
                     </form>
                 </div>
 
             </div>
 
         </div>
+        <script src="./styles/validation.js"></script>
     </body>
 </html>
