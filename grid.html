@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Learn Grid CSS</title>
+    <style>
+        .d1{background:LightSkyBlue;}
+        .d2{background:LightSalmon;}
+        .d3{background:PaleTurquoise;}
+        .d4{background:LightPink;}
+        .d5{background:PaleGreen;}
+      
+        .container {
+          font-size: 40px;
+          min-height: 300px;
+          width: 100%;
+          background: LightGray;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-column-gap:20px;
+          grid-gap: 10px 20px;
+          
+        }
+      </style>
+</head>
+<body>
+    <div class="container">
+        <div class="d1">Home</div>
+        <div class="d2">Projects</div>
+        <div class="d3">Portfolio</div>
+        <div class="d4">About</div>
+        <div class="d5">Contact</div>
+    </div>
+</body>
+</html>
